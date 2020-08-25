@@ -8,22 +8,12 @@
     <meta name="author" content="">
 
     <link href="style.css" rel="stylesheet">
+    <link href="bootstrap/css/docs.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
-    <style>
-      .unselectable {
-          -webkit-touch-callout: none;
-          -webkit-user-select: none;
-          -khtml-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
-      }
-    </style>
-
     <script>
-      var numImages = 3
+      var numImages = 4
       var currentImage = 0;
 
       function changeScreenshotImage(dir) {
@@ -40,7 +30,7 @@
     </script>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
     <div class="container-narrow">
 
       <div class="masthead">
@@ -63,7 +53,7 @@
         <p>Featured hardware:</p>
         
         <ul>
-          <li>* Intel 8088 or NEC V20&nbsp;CPU</li>
+          <li>* Intel 8088 or NEC V20 CPU</li>
           <li>* 1MB RAM</li>
           <li>* CGA/Hercules or MDA graphics card</li>
           <li>* Super PC/Turbo XT BIOS 3.1 + VXTCGA</li>
@@ -85,7 +75,7 @@
           <p>The emulator is written entirely in Go with an optional dependency to <a href="https://libsdl.org" target="_blank">SDL2</a>.</p>
 
           <h4>Lightweight</h4>
-          <p>One of the projects top priorities is to make the code simple and easy to understand.</p>
+          <p>One of the projects top priorities is to make the code simple, easy to understand, debug and improve.</p>
         </div>
 
         <div class="span6">
@@ -123,24 +113,11 @@
         <p>&copy; 2020 Andreas T Jonsson</p>
       </div>
 
-    </div> <!-- /container -->
+    </div>
 
-    <!-- Le javascript
-    ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="bootstrap/js/jquery.js"></script>
-    <script src="bootstrap/js/bootstrap-transition.js"></script>
-    <script src="bootstrap/js/bootstrap-alert.js"></script>
-    <script src="bootstrap/js/bootstrap-modal.js"></script>
-    <script src="bootstrap/js/bootstrap-dropdown.js"></script>
-    <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
-    <script src="bootstrap/js/bootstrap-tab.js"></script>
-    <script src="bootstrap/js/bootstrap-tooltip.js"></script>
-    <script src="bootstrap/js/bootstrap-popover.js"></script>
-    <script src="bootstrap/js/bootstrap-button.js"></script>
-    <script src="bootstrap/js/bootstrap-collapse.js"></script>
-    <script src="bootstrap/js/bootstrap-carousel.js"></script>
-    <script src="bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
   </body>
 </html>
