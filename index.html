@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <title>VirtualXT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <link href="style.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -27,24 +25,7 @@
         return false;
       }
 
-      var buttonDisplayStyle;
-
-      function showAlert() {
-        var dialog = document.getElementById("download-alert");
-        var btn = document.getElementById("download-button");
-        dialog.style.display = "block";
-        buttonDisplayStyle = btn.style.display;
-        btn.style.display = "none";
-      }
-
-      function hideAlert() {
-        var dialog = document.getElementById("download-alert");
-        var btn = document.getElementById("download-button");
-        dialog.style.display = "none";
-        btn.style.display = buttonDisplayStyle;
-      }
-
-      function acceptDownload() {
+      function startDownload() {
         document.body.innerHTML = "You are being redirected...";
         window.location.href = "https://phix.itch.io/virtualxt/purchase";
       }
@@ -86,16 +67,8 @@
           <li>* Ethernet adapter</li>
           <li>* PC speaker</li>
         </ul>
-        
-        <div class="alert alert-block alert-error" id="download-alert" style="display: none">
-          <p>VirtualXT is in early development and there is a lot of work to be done. You can expect crashes and incompatibilities.</p>
-          <br>
-          <p>Do you still want it? :)</p>
-          <br>
-          <a class="btn btn-danger unselectable" onclick="acceptDownload();">Yes</a> <a class="btn unselectable" onclick="hideAlert();">No</a>
-        </div>
 
-        <a class="btn btn-large btn-success unselectable" id="download-button" onclick="showAlert();">DOWNLOAD</a>
+        <a class="btn btn-large btn-success unselectable" onclick="startDownload();">DOWNLOAD</a>
       </div>
 
       <div class="row-fluid marketing">
