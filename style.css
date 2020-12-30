@@ -4,6 +4,12 @@ body {
   visibility: hidden;
 }
 
+img.screenshot {
+  filter: none;
+  border: 12px solid black;
+  width: 628px;
+}
+
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
