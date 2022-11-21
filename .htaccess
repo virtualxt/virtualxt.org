@@ -1,5 +1,0 @@
-Options +FollowSymlinks
-RewriteEngine On
-RewriteBase /
-RewriteRule ^/?(.*)$ https://phix.itch.io/virtualxt/$1 [L,QSA,R=301]
-RewriteRule ^/?$ https://phix.itch.io/virtualxt/ [L,QSA,R=301]
